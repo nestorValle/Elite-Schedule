@@ -1,0 +1,7 @@
+{
+  "name": "elite-schedule-example",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

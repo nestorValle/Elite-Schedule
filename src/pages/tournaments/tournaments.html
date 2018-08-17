@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Select tournaments</ion-title>
+    <ion-title>Select a Tournaments</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +15,8 @@
 
 <ion-content padding>
 <ion-list>
-  <button ion-item (click)="itemTapped()">
-    March Madness Tournament
+  <button *ngFor="let tournament of tournaments" ion-item (click)="itemTapped($event, tournament)">
+    {{tournament.name}}
   </button>
-  <button ion-item (click)="itemTapped()">
-      Summer Showdown
-    </button>
 </ion-list>
 </ion-content>
